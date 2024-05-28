@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/book/my-workspace/robot/include",
+                "/home/meetyoo/t113/Tina-Linux/my-workspace/robot/include"
+            ],
+            "defines": [],
+            "compilerPath": "/home/meetyoo/t113/Tina-Linux/prebuilt/gcc/linux-x86/arm/toolchain-sunxi-glibc/toolchain/bin/arm-openwrt-linux-gcc",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}

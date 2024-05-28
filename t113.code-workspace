@@ -1,0 +1,30 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../lichee/linux-5.4"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "errno.h": "c",
+            "stdio.h": "c",
+            "string.h": "c",
+            "types.h": "c",
+            "stat.h": "c",
+            "unistd.h": "c",
+            "uart.h": "c",
+            "uart_manager.h": "c",
+            "fcntl.h": "c",
+            "pthread.h": "c",
+            "net_manager.h": "c",
+            "in.h": "c",
+            "arm_control.h": "c",
+            "motor_manager.h": "c",
+            "cjson.h": "c",
+            "stdlib.h": "c"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "motor_manager.h": "c",
+        "joint_control.h": "c",
+        "arm_control.h": "c",
+        "unistd.h": "c",
+        "stdlib.h": "c",
+        "socket.h": "c",
+        "inet.h": "c",
+        "in.h": "c"
+    }
+}

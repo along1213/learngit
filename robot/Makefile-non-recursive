@@ -1,0 +1,23 @@
+CROSS_COMPILE = arm-openwrt-linux-
+CC			  = $(CROSS_COMPILE)gcc
+EXEC_CH 	  = -fexec-charset=UTF-8
+INPUT_CH 	  = -finput-charset=UTF-8
+LIB           = -lm
+INCLUDE       = -I ./include
+SUBDIR        = ./uart ./motor
+OUTPUT        = ./output
+
+SRCS          = main.c
+SRCS          += $(foreach dir, $(SUBDIR), $(wildcard $(dir)/*.c))
+OBJS          = $(patsubst %.c, $(OUTPUT)/%.o, $(SRCS))
+
+$(info $(SRCS) )
+$(info $(OBJS) )
+
+main : $(OBJS)
+	$(CC) -o $@ $(OBJS)
+
+$(OUTPUT)/%.o : %.c
+	@mkdir -p $(dir $@)
+	$(CC) -c -o $@ $< $(INPUT_CH) $(EXEC_CH) $(INCLUDE)
+
